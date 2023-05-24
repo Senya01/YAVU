@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Обработка данных форм</title>
+</head>
+<body id="index">
+<form action="/cgibin/form.py">
+    <div class="fon">
+        <h1 align="center"> Рады видеть Вас в нашем зоомагазине!</h1>
+        <p>Как к вам обращаться:
+            <input type="text" name="name" class="shad">
+        </p>
+        <p>Почтовый адрес:
+            <input type="text" name="email" class="shad">
+        </p>
+        <p>Пароль:
+            <input type="password" name="pass" class="shad">
+        </p>
+        <p>Выбираю кота:
+            <input type="checkbox" name="cat_yes" class="shad" value="cat">
+        </p>
+        <p>Выбираю собаку:
+            <input type="checkbox" name="dog_yes" class="shad" value="dog">
+        </p>
+        <fieldset>
+            <legend>Чего Вы ожидаете от нашей платформы:</legend>
+            <input type="radio" id="contactChoice1" name="choose" value="choose_cat"/>
+            <label for="contactChoice1">Широкого ассортимента</label>
+
+            <input type="radio" id="contactChoice2" name="choose" value="choose_dog"/>
+            <label for="contactChoice2">Лояльных цен</label>
+
+            <input type="radio" id="contactChoice3" name="choose" value="not_choosed"/>
+            <label for="contactChoice3">Пока не известно..</label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Далее >> " id="it">
+    </div>
+</form>
+</body>
+</html>
